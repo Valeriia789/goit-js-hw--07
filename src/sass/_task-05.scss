@@ -1,0 +1,15 @@
+#name-input {
+  padding:10px;
+  border-radius:10px;
+
+  box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.288);
+
+  &:focus {
+    outline: gold;
+    border-color: goldenrod;
+  }
+}
+
+.active-name {
+  color: rgb(22, 148, 170);
+}

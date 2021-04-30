@@ -396,4 +396,20 @@ template {
 .counter-button:focus {
   outline: none;
 }
+
+#name-input {
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.288);
+          box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.288);
+}
+
+#name-input:focus {
+  outline: gold;
+  border-color: goldenrod;
+}
+
+.active-name {
+  color: #1694aa;
+}
 /*# sourceMappingURL=main.css.map */
