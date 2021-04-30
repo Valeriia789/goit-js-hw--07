@@ -1,3 +1,11 @@
-body {
-  background-color: aquamarine;
+#gallery {
+  padding: 10px;
+  list-style: none;
+  background-image: url('https://krot.info/uploads/posts/2021-02/1613688654_39-p-neitralnii-fon-dlya-kollazha-42.jpg');
+
+  .galleryImage {
+    max-width: 50%;
+    border-radius: 15px;
+    margin: 10px;
+  }
 }

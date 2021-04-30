@@ -27,7 +27,7 @@ const imagesList = images.map(image => {
 
   imageEl.setAttribute('src', image.url)
   imageEl.setAttribute('alt', image.alt)
-  imageEl.style.maxWidth = '320px'
+  imageEl.classList.add('galleryImage')
 
   return imageListEl
 })
