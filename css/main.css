@@ -341,12 +341,24 @@ template {
   display: none;
 }
 
-body {
-  background-color: #0d412f;
+#gallery {
+  padding: 10px;
+  list-style: none;
+  background-image: url("https://krot.info/uploads/posts/2021-02/1613688654_39-p-neitralnii-fon-dlya-kollazha-42.jpg");
 }
 
-body {
-  background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
+#gallery .galleryImage {
+  max-width: 50%;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.body-task-4 {
+  background: url("https://html5book.ru/wp-content/uploads/2015/07/background39.png");
+}
+
+#value {
+  font-size: 30px;
 }
 
 .counter-button {
@@ -357,26 +369,31 @@ body {
   line-height: 45px;
   border-radius: 45px;
   margin: 10px 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 3px;
-  font-weight: 600;
+  font-weight: 800;
   color: #524f4e;
   background: white;
   -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .counter-button:hover {
-  background: #2EE59D;
+  background: #2ee59d;
   -webkit-box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
           box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
   color: white;
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
+  outline: none;
+}
+
+.counter-button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */
