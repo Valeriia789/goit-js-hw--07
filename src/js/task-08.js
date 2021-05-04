@@ -8,11 +8,11 @@ refs.renderBtn.addEventListener('click', getAmount)
 refs.destroyBtn.addEventListener('click', destroyBoxes)
 
 function getAmount () {
-  let amount = document.querySelector('#controls input').value
-  createBoxes(amount)
+  let boxesAmountInput = document.querySelector('#controls input').value
+  createBoxes(boxesAmountInput)
 }
 
-function createBoxes (amount) {
+function createBoxes (boxesAmountInput) {
   let basicSize = 30
   let fragment = document.createDocumentFragment()
 
