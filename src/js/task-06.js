@@ -17,9 +17,9 @@ const refs = {
 refs.validationInput.addEventListener('blur', onInputCheck)
 
 function onInputCheck () {
-  console.log(refs.validationInput.value.length)
-  console.log(refs.inputLengthNumber)
-  console.log(refs.validationInput.value.length === refs.inputLengthNumber)
+  // console.log(refs.validationInput.value.length)
+  // console.log(refs.inputLengthNumber)
+  // console.log(refs.validationInput.value.length === refs.inputLengthNumber)
 
   if (refs.validationInput.value.length === 0) {
     refs.validationInput.classList.remove('invalid')
