@@ -1,0 +1,63 @@
+#controls {
+  input {
+    width: 150px;
+    height: 20px;
+
+    padding: 10px;
+
+    border: 3px solid #5965ceaf;
+    border-radius: 5px;
+
+    box-shadow: 0 0 20px 5px rgba(212, 47, 116, 0.548);
+  }
+
+  button {
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: hsl(220, 80%, 50%);
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+
+    box-shadow: 0px 0px 0px 5px hsl(330, 70%, 50%),
+      0px 10px 0px 5px hsl(330, 80%, 40%), 0px 10px 10px 5px #0003;
+    cursor: pointer;
+
+    &:hover {
+      animation: 0.8s morph ease infinite;
+    }
+
+    @keyframes morph {
+      0% {
+        border-radius: 100px 30px 100px 30px;
+      }
+      50% {
+        border-radius: 30px 100px 30px 100px;
+      }
+      100% {
+        border-radius: 100px 30px 100px 30px;
+      }
+    }
+
+    @keyframes rot {
+      0% {
+        transform: rotate(-3deg);
+      }
+      50% {
+        transform: rotate(3deg);
+      }
+      100% {
+        transform: rotate(-3deg);
+      }
+    }
+  }
+}
+
+#boxes {
+  background-color: rgba(190, 188, 146, 0.26);
+}
+
+.box-element {
+  border-radius: 50%;
+}

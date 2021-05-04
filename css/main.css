@@ -509,4 +509,94 @@ template {
 ::-ms-tooltip {
   display: none;
 }
+
+#controls input {
+  width: 150px;
+  height: 20px;
+  padding: 10px;
+  border: 3px solid #5965ceaf;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 20px 5px rgba(212, 47, 116, 0.548);
+          box-shadow: 0 0 20px 5px rgba(212, 47, 116, 0.548);
+}
+
+#controls button {
+  margin: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #1a5ee6;
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 0px 5px #d92680, 0px 10px 0px 5px #b81466, 0px 10px 10px 5px #0003;
+          box-shadow: 0px 0px 0px 5px #d92680, 0px 10px 0px 5px #b81466, 0px 10px 10px 5px #0003;
+  cursor: pointer;
+}
+
+#controls button:hover {
+  -webkit-animation: 0.8s morph ease infinite;
+          animation: 0.8s morph ease infinite;
+}
+
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 100px 30px 100px 30px;
+  }
+  50% {
+    border-radius: 30px 100px 30px 100px;
+  }
+  100% {
+    border-radius: 100px 30px 100px 30px;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 100px 30px 100px 30px;
+  }
+  50% {
+    border-radius: 30px 100px 30px 100px;
+  }
+  100% {
+    border-radius: 100px 30px 100px 30px;
+  }
+}
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  50% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  100% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  50% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  100% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+}
+
+#boxes {
+  background-color: rgba(190, 188, 146, 0.26);
+}
+
+.box-element {
+  border-radius: 50%;
+}
 /*# sourceMappingURL=main.css.map */
