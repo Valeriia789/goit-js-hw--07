@@ -4,6 +4,8 @@ const refs = {
   incrementBtn: document.querySelector('[data-action="increment"]')
 }
 
+let currentValue = 0
+
 refs.decrementBtn.addEventListener('click', decrement)
 refs.incrementBtn.addEventListener('click', increment)
 
@@ -11,11 +13,15 @@ refs.decrementBtn.classList.add('counter-button')
 refs.incrementBtn.classList.add('counter-button')
 
 function decrement () {
-  refs.counterValue.textContent--
+  currentValue -= 1
+  refs.counterValue.textContent = currentValue
+  // refs.counterValue.textContent--
   // refs.counterValue.innerHTML--
 }
 
 function increment () {
-  refs.counterValue.textContent++
+  currentValue += 1
+  refs.counterValue.textContent = currentValue
+  // refs.counterValue.textContent++
   // refs.counterValue.innerHTML--
 }
